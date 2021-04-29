@@ -12,7 +12,7 @@ void USARTWriteChar(char data){
     while (!(UCSR0A & (1<<UDRE0)));
    UDR0=data;
 }
-void data_display(uint16_t temp)
+void data_display(uint16_t temp)//display temperature value
 {
             uint16_t i=0;
             if(temp<=200)
