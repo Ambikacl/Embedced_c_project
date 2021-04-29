@@ -43,23 +43,4 @@ void Init_Ports(void)
         Heater_On();
 }
 
-void Led_Status(void)
-{
-    uint16_t temp=0, tempdata=0;
-    InitADC();
-    setup_PWM();
-    led_State(LED_OFF);
-    while(1){
-        /*checks whether button and Heater is ON or OFF */
-        if(PersonSeated && HeaterOn){
-                led_State(LED_ON);
-                temp = ReadADC(tempdata);
-                OCR1A = temp;
-                _delay_ms(200);
-        }
-        else
-        {
-            led_State(LED_OFF);
-    }
-}
-}
+
