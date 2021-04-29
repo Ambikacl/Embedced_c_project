@@ -36,7 +36,7 @@ void Init_Ports(void)
 
 void Led_Status(void)
 {
-    uint16_t temp, i=0;
+    uint16_t temp, i;
     InitADC();
     setup_PWM();
     led_State(LED_OFF);
