@@ -1,4 +1,6 @@
 #include "act1.h"
+#include "act4.h"
+
 void InitUSART(uint16_t ubrr_value){
 UBRR0L = ubrr_value;
 UBRR0H=(ubrr_value>>8)&0x00ff;
