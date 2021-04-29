@@ -64,14 +64,6 @@ void Button_On(void);
 void Heater_On(void);
 
 /**
- * @brief Function to generate delay
- *
- * @param[in] delay_time Delay in Micro seconds
- *
- */
-void delay_in_ms(uint32_t delay_sec);
-
-/**
  * @brief Function to change LED status according to requirement in activity1
  *
  */
