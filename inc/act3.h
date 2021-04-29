@@ -17,6 +17,5 @@
  */
 void setup_PWM(void);
 
-char pwmout(uint16_t temp);
 
 #endif // ACT3_H_INCLUDED
