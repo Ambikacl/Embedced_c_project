@@ -7,7 +7,7 @@ void setup_PWM(void){
     TCCR1B=(1<<WGM12)|(1<<CS11)|(1<<CS10);//64 prescale
     DDRB|=(1<<PB1);
 }
-void pwmout(uint16_t temp)
+void pwmout(uint16_t temp)//temperature values
 {
             if(temp<=200)
             {
