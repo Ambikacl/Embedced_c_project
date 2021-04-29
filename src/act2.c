@@ -17,6 +17,7 @@
 void InitADC()
 {
     ADMUX|=(1<<REFS0);// Select Vref=AVcc
+    
     ADCSRA=(1<<ADEN)|(7<<ADPS0);//set pre-scaller to 128 and enable ADC
 }
 
