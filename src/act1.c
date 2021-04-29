@@ -12,7 +12,6 @@
 #include "act1.h"
 #include "act2.h"
 #include "act3.h"
-#include<util/delay.h>
 /**
  * @brief Change the state of the LED Pin according to the value of state
  *
