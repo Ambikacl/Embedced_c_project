@@ -12,3 +12,36 @@ void USARTWriteChar(char data){
     while (!(UCSR0A & (1<<UDRE0)));
    UDR0=data;
 }
+void data_display(uint16_t temp)
+{
+            uint16_t i=0;
+            if(temp<=200)
+            {
+                char temp_value[33] = "Temperature =20 deg Celsius\n";
+                for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
+                _delay_ms(200);
+            }
+            else if(temp<=500 && temp>=210)
+            {
+                char temp_value[33] = "Temperature =25 deg Celsius\n";
+                for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
+                _delay_ms(200);
+            }
+            else if(temp<=700 && temp>=510)
+            {
+                char temp_value[33] ="Temperature =29 deg Celsius\n";
+                for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
+                _delay_ms(200);
+            }
+            else if(temp<=1024 && temp>=710)
+            {
+                char temp_value[33] = "Temperature =33 deg Celsius\n";
+                for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
+                _delay_ms(200);
+            }
+            else
+            {
+                LED_OFF;
+                _delay_ms(200);
+            }
+}
