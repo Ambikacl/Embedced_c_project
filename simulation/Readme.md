@@ -36,11 +36,11 @@ For 33 deg celsuis:
 
 For 25 deg celsuis:
 
-![act4-25](https://github.com/Ambikacl/Embedced_c_project/blob/main/actvity-4-1.JPG)
+![act4-25](https://github.com/Ambikacl/Embedced_c_project/blob/main/actvity-4-2.JPG)
 
 For 33 deg celsuis:
 
-![act4-33](https://github.com/Ambikacl/Embedced_c_project/blob/main/actvity-4-2.JPG)
+![act4-33](https://github.com/Ambikacl/Embedced_c_project/blob/main/actvity-4-1.JPG)
 
 # Final Circuit
 
