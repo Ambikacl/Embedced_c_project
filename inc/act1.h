@@ -64,7 +64,6 @@ void Button_On(void);
 void Heater_On(void);
 
 
-
 /**
  * @brief Function to change LED status according to requirement in activity1
  *
