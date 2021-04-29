@@ -34,6 +34,7 @@
 #define SET_PORTB0  DDRB |= (1<<PORTB0) /** Port B0 as output */
 #define SET_PD1_AND_PD2  PORTD |= (2<<PD0)|(4<<PD0) /** PD1 and PD2 as pull-up */
 #define SET_PORTD  DDRD = 0x00 /** PortD as input */
+#define PWM_TempValue OCR1A
 /**
  * @brief Function to change LED status
  *
