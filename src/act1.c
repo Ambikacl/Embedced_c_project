@@ -20,12 +20,12 @@ void Heater_On(void)
 	HEATER_PORT |= (1 << HEATER_PIN);
 }
 
-void Init_Ports(void)
+void Init_Ports(void)//To initialize ports
 {
 	/* Configure LED Pin */
-	SET_PORTB0;
+	SET_PORTB0;//Configure B0 as output
         SET_PORTD;
-	SET_PD1_AND_PD2; //for input
+	SET_PD1_AND_PD2; //Configure D1 & D2 as input
         Button_On();
         Heater_On();
 }
