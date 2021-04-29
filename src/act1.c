@@ -43,4 +43,53 @@ void Init_Ports(void)
         Heater_On();
 }
 
+void Led_Status(void)
+{
+    uint16_t temp, i=0;
+    InitADC();
+    setup_PWM();
+    led_State(LED_OFF);
+    while(1){
+        /*checks whether button and Heater is ON or OFF */
+        if(PersonSeated && HeaterOn)
+        {
+            led_State(LED_ON);
+            InitUSART(103);
+            temp=ReadADC(0);
+            if(temp<=200)
+            {
+                PWM_TempValue=51;
+                char temp_value[33] = "Temperature value=20 deg Celsius";
+                for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
+               _delay_ms(200);
+            }
+            else if(temp<=500 && temp>=210)
+            {
+                PWM_TempValue=102;
+                char temp_value[33] = "Temperature value=25 deg Celsius";
+                for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
+                _delay_ms(200);
+            }
+            else if(temp<=700 && temp>=510)
+            {
+                PWM_TempValue=179;
+                char temp_value[33] ="Temperature value=29 deg Celsius";
+                for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
+                _delay_ms(200);
+            }
+            else if(temp<=1024 && temp>=710)
+            {
+                PWM_TempValue=242;
+                char temp_value[33] = "Temperature value=33 deg Celsius";
+                for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
+                _delay_ms(200);
+            }
 
+        }
+        else
+        {
+            led_State(LED_OFF);
+            _delay_ms(200);
+        }
+}
+}
