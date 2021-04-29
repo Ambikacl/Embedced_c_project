@@ -12,7 +12,7 @@
  *
  */
 
-
+/*USART initialization*/
 void USARTInit(uint16_t);
 char USARTReadChar();
 void USARTWriteChar(char);
