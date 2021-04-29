@@ -55,7 +55,7 @@ void Led_Status(void)
                 led_State(LED_ON);
                 temp = ReadADC(tempdata);
                 OCR1A = temp;
-                delay_in_ms(200);
+                _delay_ms(200);
         }
         else
         {
