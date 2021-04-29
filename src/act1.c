@@ -1,13 +1,3 @@
-/**
- * @file act1.c
- * @author Ambika C L (259806)
- * @brief states of LED
- * @version 0.1
- * @date 2021-04-28
- *
- * @copyright Copyright (c) 2021
- *
- */
 // include files
 #include "act1.h"
 #include "act2.h"
@@ -59,28 +49,28 @@ void Led_Status(void)
             if(temp<=200)
             {
                 PWM_TempValue=51;
-                char temp_value[33] = "Temperature value=20 deg Celsius";
+                char temp_value[33] = "Temperature = 20 deg Celsius\n";
                 for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
                _delay_ms(200);
             }
             else if(temp<=500 && temp>=210)
             {
                 PWM_TempValue=102;
-                char temp_value[33] = "Temperature value=25 deg Celsius";
+                char temp_value[33] = "Temperature = 25 deg Celsius\n";
                 for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
                 _delay_ms(200);
             }
             else if(temp<=700 && temp>=510)
             {
                 PWM_TempValue=179;
-                char temp_value[33] ="Temperature value=29 deg Celsius";
+                char temp_value[33] ="Temperature = 29 deg Celsius\n";
                 for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
                 _delay_ms(200);
             }
             else if(temp<=1024 && temp>=710)
             {
                 PWM_TempValue=242;
-                char temp_value[33] = "Temperature value=33 deg Celsius";
+                char temp_value[33] = "Temperature = 33 deg Celsius\n";
                 for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
                 _delay_ms(200);
             }
