@@ -44,4 +44,4 @@ For 33 deg celsuis:
 
 # Final Circuit
 
-![Final_Circuit](https://user-images.githubusercontent.com/80452069/116544522-e31d9300-a90c-11eb-9e19-497e37b52310.PNG)
+![Final_Circuit](https://github.com/Ambikacl/Embedced_c_project/blob/main/simulation/activity.JPG)
