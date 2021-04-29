@@ -67,6 +67,5 @@ void Heater_On(void);
  * @brief Function to change LED status according to requirement in activity1
  *
  */
-void Led_Status(void);
 
 #endif // ACT1_H_INCLUDED
