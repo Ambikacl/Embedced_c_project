@@ -29,12 +29,12 @@ int main(void)
               if(PersonSeated && HeaterOn)//checks whether button and Heater is ON or OFF
               {
                     led_State(LED_ON);//blinking of the led
-                    _delay_ms(20);
+                    _delay_ms(200);
 
                     temp= ReadADC(0);//reading the adjusted temp value
                     _delay_ms(200);
 
-                    pwmout(temp);
+                    pwmout(temp);//pwm generation
                     data_display(temp);
 
               }
