@@ -14,7 +14,7 @@
 int main(void)
 {
     Init_Ports();/* Initialize Ports */
-	/* if and only if both button sensor and heater switch is on(pressed) LED turns ON */
+	/* if and only if both button sensor switch and heater switch is on(pressed) LED turns ON */
 	Led_Status();
     return 0;
 }
