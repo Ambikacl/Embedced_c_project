@@ -1,7 +1,7 @@
 /**
  * @file act3.h
  * @author Ambika C L (259806)
- * @brief Activity 3
+ * @brief Activity-3
  * @version 0.1
  * @date 2021-04-29
  *
