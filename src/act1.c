@@ -1,4 +1,3 @@
-#include <avr/io.h>
 #include "act1.h"
 /**
  * @brief Change the state of the LED Pin according to the value of state
