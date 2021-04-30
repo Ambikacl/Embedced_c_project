@@ -1,14 +1,3 @@
-/**
- * @file act2.c
- * @author Ambika C L(259806)
- * @brief
- * @version 0.1
- * @date 2021-04-28
- *
- * @copyright Copyright (c) 2021
- *
- */
-#include<avr/io.h>
 #include "act1.h"
 #include "act2.h"
 
