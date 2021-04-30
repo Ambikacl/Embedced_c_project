@@ -39,9 +39,4 @@ void data_display(uint16_t temp)//display temperature value
                 for(i=0;i<33;i++){USARTWriteChar(temp_value[i]);}
                 _delay_ms(200);
             }
-            else
-            {
-                LED_OFF;
-                _delay_ms(200);
-            }
 }
