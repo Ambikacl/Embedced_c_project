@@ -14,7 +14,7 @@ void USARTWriteChar(char data){
 }
 void data_display(uint16_t temp)//display temperature value
 {
-            uint16_t i=0;
+            uint16_t i;
             if(temp<=200)
             {
                 char temp_value[33] = "Temperature =20 deg Celsius\n";
